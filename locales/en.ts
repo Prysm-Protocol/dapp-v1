@@ -22,9 +22,11 @@ const en = {
     CONNECT: 'Connect',
     CONNECTING: 'Connecting',
     DISCONNECT: 'Disconnect',
-    NOT_ALLOWED: 'Not allowed',
     ADDRESS: 'Address',
     BALANCE: 'Balance'
+  },
+  FEEDBACK: {
+    NOT_ALLOWED: 'Not allowed'
   },
   NETWORK: {
     TITLE: 'Network',
