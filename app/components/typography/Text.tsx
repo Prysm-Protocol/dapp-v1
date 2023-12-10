@@ -33,7 +33,7 @@ export type TextProps = Omit<HTMLProps<HTMLElement>, 'size'> & {
 
 export const Text = ({
   as = 'p',
-  variant = 'p',
+  variant,
   size = 'default',
   children,
   className,
@@ -44,7 +44,7 @@ export const Text = ({
         ...props,
         className: classNames(
           className,
-          size ? Sizes[size] : Variant[variant].classes
+          size ? Sizes[size] : Variant[variant || as].classes
         )
       })
     : createElement(

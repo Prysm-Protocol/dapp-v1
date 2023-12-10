@@ -53,8 +53,8 @@ export const PageContainer = () => {
   })
 
   return (
-    <div className={'flex  h-full items-center justify-center'}>
-      <Card className='flex w-full flex-col space-y-4 rounded-md p-4 lg:w-auto lg:min-w-[26rem]'>
+    <div className='flex h-full w-full flex-col items-center justify-center space-y-4 rounded-md  lg:w-auto lg:min-w-[26rem]'>
+      <Card className='flex flex-col space-y-4 p-4'>
         <FormProvider {...methods}>
           <Form
             onSwitch={handleSwitch}

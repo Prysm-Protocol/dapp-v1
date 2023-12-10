@@ -22,7 +22,7 @@ export const Card = ({
       },
       className: classNames(
         className,
-        'bg-stone-100 ring-2 shadow-lg shadow-indigo-300/10 ring-indigo-300/20 rounded-md backdrop-blur ',
+        'bg-stone-100 ring-4 shadow-lg shadow-indigo-300/10 ring-indigo-300/20 rounded-md backdrop-blur ',
         `!bg-opacity-[var(--bg-opacity)]`
       )
     },

@@ -60,7 +60,7 @@ export const Form = ({
             aria-label='Switch'
             type='button'
             onClick={onSwitch}
-            className='text-third-300 dark:text-lime-400'
+            className='rounded-full bg-white text-third-300 dark:text-lime-400'
           >
             <ArrowPathRoundedSquareIcon
               width={24}
@@ -80,19 +80,20 @@ export const Form = ({
         sourceChain={sourceChain}
         destinationChain={destinationChain}
       />
+
       {!isLoading && status === 'success' && (
-        <p className='flex space-x-px text-green-500'>
+        <div className='flex space-x-px text-green-500'>
           <Text as='span'>
             {t('PAGES.APPS.CROSSCHAIN_NFT_BRIDGE.FEEDBACK.SUCCESS_TO')}
           </Text>
           <Text as='span'>{destinationChain.name}!</Text>
-        </p>
+        </div>
       )}
 
       {!isLoading && status === 'error' && (
-        <p className='text-red-500'>
-          {t('PAGES.APPS.CROSSCHAIN_NFT_BRIDGE.FEEDBACK.ERROR_TO')}
-        </p>
+        <div className='text-red-500'>
+          <Text>{t('PAGES.APPS.CROSSCHAIN_NFT_BRIDGE.FEEDBACK.ERROR_TO')}</Text>
+        </div>
       )}
     </form>
   )
