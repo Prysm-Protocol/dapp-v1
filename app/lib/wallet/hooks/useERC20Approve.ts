@@ -1,8 +1,8 @@
 'use client'
 
-import { useNetwork, useWallet } from '@/app/lib/wallet/hooks'
+import { useWallet } from '@/app/lib/wallet/hooks'
 import { ethers } from 'ethers'
-import { eq, isEmpty, gte } from 'lodash'
+import { isEmpty } from 'lodash'
 import { useMemo } from 'react'
 import { MaxUint256 } from '@ethersproject/constants'
 

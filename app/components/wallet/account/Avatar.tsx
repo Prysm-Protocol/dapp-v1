@@ -10,7 +10,6 @@ export type AccountAvatarProps = HTMLProps<HTMLDivElement> & {
 const SIZE = 52
 
 export const AccountAvatar = ({
-  src,
   address,
   className,
   ...props

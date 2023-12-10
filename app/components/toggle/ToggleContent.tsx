@@ -15,7 +15,6 @@ export type ToggleContentProps = {
   element: ReactNode | ((props: ToggleContentOptions) => ReactNode)
   className?: string
   squareRootClassName?: string
-  squareClassName?: string
   squareRootOpenClassName?: string
   squareRootCloseClassName?: string
   useClickOutside?: boolean
@@ -27,7 +26,6 @@ export const ToggleContent = ({
   squareRootClassName,
   squareRootOpenClassName,
   squareRootCloseClassName,
-  squareClassName,
   useClickOutside,
   ...props
 }: ToggleContentProps) => {

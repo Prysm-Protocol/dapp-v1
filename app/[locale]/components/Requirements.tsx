@@ -1,4 +1,4 @@
-import { Heading, Text } from '@/app/components/typography'
+import { Text } from '@/app/components/typography'
 
 import Link from 'next/link'
 

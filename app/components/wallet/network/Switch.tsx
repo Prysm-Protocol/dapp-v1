@@ -2,24 +2,18 @@
 
 import { Button } from '@/app/components'
 import { ButtonProps } from '@/app/components/Button'
-import AccountConnect from '@/app/components/wallet/account/Connect'
 import { Chain } from '@/app/config/types'
-import { useNetwork, useWallet } from '@/app/lib/wallet/hooks'
-import { useI18n } from '@/locales/client'
+import { useNetwork } from '@/app/lib/wallet/hooks'
 
 export type NetworkSwitchProps = ButtonProps & {
   sourceChain: Chain
-  destinationChain: Chain
   onSubmit?: () => void
 }
 export const NetworkSwitch = ({
-  destinationChain,
   sourceChain,
   disabled,
   ...props
 }: NetworkSwitchProps) => {
-  const t = useI18n()
-
   const { switchNetwork, isLoading, chain } = useNetwork()
   const wrongSourceChain = chain?.id !== sourceChain.id
 
