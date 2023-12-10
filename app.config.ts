@@ -1,20 +1,16 @@
 export const socialMedia = [
   {
-    label: 'X',
-    href: 'https://x.com/gervickasjs',
-    icon: 'x'
-  },
-  {
     label: 'Github',
-    href: 'https://github.com/0xdevhub',
+    href: 'https://github.com/Prysm-Protocol',
     icon: 'github'
   }
 ]
 
 const appConfig = {
-  name: '0xdevhub',
+  name: 'Prysm Protocol',
   meta: {
-    description: 'gervickas.js blockchain hub'
+    description:
+      'Swap, bridge and provide liquidity crosschain using Prysm Protocol'
   },
   socialMedia
 }

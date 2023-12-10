@@ -17,19 +17,6 @@ const en = {
       }
     }
   },
-  FEEDBACK: {
-    NOT_ALLOWED: 'Not allowed',
-    NO_APPS_FOUND: 'No apps found',
-    NO_WIDGET_AVAILABLE: 'No widget available'
-  },
-  LANGUAGE: {
-    TITLE: 'Language'
-  },
-  THEME: {
-    TITLE: 'Theme',
-    LIGHT: 'Light',
-    DARK: 'Dark'
-  },
   WALLET: {
     TITLE: 'Wallet',
     CONNECT: 'Connect',

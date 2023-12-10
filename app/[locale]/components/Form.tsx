@@ -2,7 +2,6 @@
 
 import { Heading, Text } from '@/app/components/typography'
 import { ArrowPathRoundedSquareIcon } from '@heroicons/react/20/solid'
-import { Selector } from '.'
 import { AddressField } from './AddressField'
 import { Chain } from '@/app/config/types'
 import { BridgeButton } from './BridgeButton'
@@ -10,6 +9,7 @@ import { useFormContext } from 'react-hook-form'
 import { useI18n } from '@/locales/client'
 import { TokenIdField } from './TokenIdField'
 import { useBridge } from '../lib/hooks/useBridge'
+import { Selector } from './Selector'
 
 export type FormData = {
   erc721Address: string
@@ -81,11 +81,11 @@ export const Form = ({
         destinationChain={destinationChain}
       />
       {!isLoading && status === 'success' && (
-        <p className='text-green-500'>
-          <Text>
+        <p className='flex space-x-px text-green-500'>
+          <Text as='span'>
             {t('PAGES.APPS.CROSSCHAIN_NFT_BRIDGE.FEEDBACK.SUCCESS_TO')}
           </Text>
-          <Text>{destinationChain.name}!</Text>
+          <Text as='span'>{destinationChain.name}!</Text>
         </p>
       )}
 

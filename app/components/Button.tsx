@@ -16,10 +16,9 @@ export const Sizes = {
 
 export const Variant = {
   default: {
-    classes: 'bg-third-300 text-cyan-50 dark:bg-lime-400 dark:text-third-500',
-    disabled:
-      'bg-third-300/70 text-cyan-50/80 dark:bg-lime-400/70 dark:text-third-300 cursor-not-allowed',
-    hover: 'hover:bg-third-300/90 dark:hover:bg-lime-400/90'
+    classes: 'bg-white text-sky-500  ',
+    disabled: 'bg-white/70 text-sky-500/80  cursor-not-allowed',
+    hover: 'hover:bg-white/90'
   }
 } as const
 

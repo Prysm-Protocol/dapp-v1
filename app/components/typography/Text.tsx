@@ -8,6 +8,7 @@ import {
 import classNames from 'classnames'
 
 export const Sizes = {
+  xs: 'text-xs',
   default: 'text-sm',
   base: 'text-base',
   lg: 'text-lg',

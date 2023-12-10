@@ -1,50 +1,22 @@
 import { type HTMLProps } from 'react'
 import Link from 'next/link'
 import appConfig from '@/app.config'
-import classNames from 'classnames'
-import { Righteous } from 'next/font/google'
+import { Text } from './typography'
 
-const font = Righteous({
-  weight: ['400'],
-  subsets: ['latin']
-})
-
-const DEFAULT_CLASSES = [
-  'dark:from-yellow-300 dark:via-sky-300 dark:to-lime-300',
-  'from-yellow-500 via-sky-500 to-lime-500',
-  'animate-rotate-gradient bg-gradient-conic bg-300 bg-clip-text font-extrabold text-transparent'
-]
-
-export const Logo = ({ className, ...props }: HTMLProps<HTMLDivElement>) => {
+export const Logo = (props: HTMLProps<HTMLDivElement>) => {
   return (
-    <div {...props} className={classNames(className, font.className)}>
+    <div {...props}>
       <Link
         title={appConfig.name}
         className='select-none text-xl'
         href='/'
         translate='no'
       >
-        <h1 className='flex items-center space-x-px'>
-          <span>0xdev</span>
-          <span className='z-1 relative'>
-            <span
-              className={classNames([
-                DEFAULT_CLASSES,
-                'shadow-black dark:drop-shadow'
-              ])}
-            >
-              hub
-            </span>
-            <span
-              aria-hidden
-              className={classNames([
-                DEFAULT_CLASSES,
-                'absolute left-0 right-0 h-full w-full opacity-75 blur-sm'
-              ])}
-            >
-              hub
-            </span>
-          </span>
+        <h1 className='flex items-baseline space-x-px text-white'>
+          <Text size='xl'>Prysm</Text>
+          <Text size='xs' className='text-sky-50'>
+            .Bridge
+          </Text>
         </h1>
       </Link>
     </div>

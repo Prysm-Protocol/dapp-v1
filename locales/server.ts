@@ -4,7 +4,6 @@ import en from './en'
 export const { getI18n, getScopedI18n, getCurrentLocale, getStaticParams } =
   createI18nServer(
     {
-      pt: () => import('./pt'),
       en: () => import('./en')
     },
     {
