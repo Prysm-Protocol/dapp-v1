@@ -100,10 +100,7 @@ export const BridgeButton = ({
       ) : (
         <>
           {wrongSourceChain ? (
-            <NetworkSwitch
-              sourceChain={sourceChain}
-              destinationChain={destinationChain}
-            />
+            <NetworkSwitch sourceChain={sourceChain} />
           ) : (
             <div className='flex flex-col space-y-4'>
               <ul>
