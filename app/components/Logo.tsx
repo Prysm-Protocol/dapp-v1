@@ -1,7 +1,7 @@
 import { type HTMLProps } from 'react'
 import Link from 'next/link'
 import appConfig from '@/app.config'
-import { Text } from './typography'
+import Image from 'next/image'
 
 export const Logo = (props: HTMLProps<HTMLDivElement>) => {
   return (
@@ -12,12 +12,12 @@ export const Logo = (props: HTMLProps<HTMLDivElement>) => {
         href='/'
         translate='no'
       >
-        <h1 className='flex items-baseline space-x-px text-white'>
-          <Text size='xl'>Prysm</Text>
-          <Text size='xs' className='text-sky-50'>
-            .Bridge
-          </Text>
-        </h1>
+        <Image
+          src='/assets/images/logo.png'
+          alt={appConfig.name}
+          width={150}
+          height={30}
+        />
       </Link>
     </div>
   )
